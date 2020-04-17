@@ -8,7 +8,7 @@ In order to install the Python package, clone the repository on your machine
 and install it using `pip`
 - `pip install .`
 
-Notice that, if you are using Python 3.7 you will not be able to install the package directly due to the fact that one of the requirements (`slycot`) cannot be installed using `pip` when using Python 3.7. However, you can install `slycot` using `conda` (this requires installing `conda`, of course) instead 
+Notice that, if you are using Python 3.7 you will not be able to install the package directly due to the fact that one of the requirements (`slycot`) cannot be installed with `pip` when using Python 3.7. However, you can install `slycot` using `conda` (this requires installing `conda`, of course) instead 
 -`conda install -c conda-forge slycot`.
 
 ## Generating plots
