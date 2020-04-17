@@ -1,1 +1,1 @@
-# nmpc_system_optimizer_lyapunov
+This repository contains the code associated with the numerical example of Section V of the paper "A Lyapunov Function for the Combined System-Optimizer Dynamics in Nonlinear Model Predictive Control" - Andrea Zanelli, Quoc Tran Dinh, Moritz Diehl. 
