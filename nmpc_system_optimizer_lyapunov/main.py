@@ -30,8 +30,8 @@ LQR_INIT = False
 FLIP_LQR_INIT = False
 # UPDATE_FIGURES = True
 UPDATE_FIGURES = False
-# ESTIMATE_CONSTANTS = True
-ESTIMATE_CONSTANTS = False
+ESTIMATE_CONSTANTS = True
+# ESTIMATE_CONSTANTS = False
 RUN = True
 # RUN = False
 SAVE_RESULTS_JSON = True
@@ -87,6 +87,9 @@ gamma_hat = gamma/np.sqrt(a1)
 mu_hat = L_phi_u * np.exp(par.Ts * L_phi_x) * mu_tilde
 
 beta = 0.5*a_bar/(2*gamma_hat)
+w2 = par.Ts*mu_hat/(1-kappa) + \
+    0.5*((1-(1-par.Ts*a_bar)**(1.0/2.0))/(par.Ts*gamma_hat) \
+    - par.Ts*mu_hat/(1-kappa))
 print('beta = {}'.format(beta))
 
 lower_bound = par.Ts*mu_hat/(1-kappa)
